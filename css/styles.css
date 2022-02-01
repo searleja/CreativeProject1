@@ -125,7 +125,7 @@
   }
 
   .optionImg img {
-    width: 200px;
+    max-width: 200px;
   }
 
   .optionImg img:hover {
@@ -141,9 +141,10 @@
   }
 
 
-  /* Mobile Styles
-  @media only screen and (max-width: 400px) {
-    
+  @media only screen and (max-width: 650px) {
+    .displayGrid {
+      grid-template: auto auto auto auto auto / 1fr 1fr;
+    }
   }
   
   /* Tablet Styles
