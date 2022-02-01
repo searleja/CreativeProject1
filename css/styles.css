@@ -1,5 +1,4 @@
-  
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,17 +8,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image:url(/images/background-image.jpg);
   }
 
   .bg-mint {
     background-color: #1D91C4;
   }
-
-  /* div.background {
-    background: url(/images/hawaii-candid.jpg); 
-    border: 1px solid blue;
-    background-size: 1398px 400px;
-  } */
 
   .header {
     background: url(/images/hawaii-candid.jpg);
@@ -42,12 +37,29 @@
     background-color: #ffffff;
     /* border: 1px solid black; */
     opacity: 0.6;
+    text-align:center;
   }
 
-  div.transbox h1 {
-    margin: 5%;
+
+  div.transbox h1, p {
+    margin: 2%;
     font-weight: bold;
     color: #000000;
+  }
+
+  div.transbox ul, li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+  }
+
+  p {
+    padding: 10px 60px;
+    /* border: 1px solid #5D6063; */
+    text-align: center;
+    box-sizing: border-box;
+    font-size:medium;
   }
   
   .menu {
@@ -60,6 +72,12 @@
     height: 400px;
   }
 
+  .footer {
+    clear:both;
+    height: 200px;
+    /* background-color: #D6E9FE;  */
+  }
+
   .list {
     display:flex;
     justify-content:center;
@@ -68,10 +86,11 @@
   
   .item a {
     display: block;
-    color: rgb(54, 54, 54);
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
   }
   
   .displayGrid {
@@ -83,10 +102,34 @@
     justify-items: center;
   }
 
+  #aboutGrid {
+    grid-template: auto auto auto auto auto / 1fr 1fr;
+  }
+
+  .gridItem {
+    border-style: dotted ridge;
+    border-radius: 50px;
+    opacity: 0.6;
+    background-color: #ffffff;
+  }
+
   .photo img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .footerImg img {
+    max-height: 50px;
+    width: 100%;
+  }
+
+  .optionImg img {
+    width: 200px;
+  }
+
+  .optionImg img:hover {
+    opacity: 0.8;
   }
 
 
